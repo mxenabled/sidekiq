@@ -278,7 +278,7 @@ module Sidekiq # :nodoc:
 
       if File.directory?(@config[:require])
         require "rails"
-        if ::Rails::VERSION::MAJOR < 5
+        if ::Rails::VERSION::MAJOR < 4
           raise "Sidekiq no longer supports this version of Rails"
         else
           require "sidekiq/rails"
