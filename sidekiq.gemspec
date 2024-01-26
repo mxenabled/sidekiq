@@ -24,5 +24,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "redis", ["<5", ">= 4.5.0"]
   gem.add_dependency "connection_pool", ["<3", ">= 2.2.5"]
-  gem.add_dependency "rack", "~> 2.0"
+  gem.add_dependency "rack", "< 2.1.0"
 end
